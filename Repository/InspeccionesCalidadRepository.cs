@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace CasoPropuesto_5.Repository;
 
-public class InspeccionesCalidadRepository : Repositorio<InspeccionesCalidad>, IInspeccionesCalidadRepository
+public class InspeccionesCalidadRepository : GenericRepository<InspeccionesCalidad>, IInspeccionesCalidadRepository
 {
     public InspeccionesCalidadRepository(AppDbContext contexto) : base(contexto)
     {

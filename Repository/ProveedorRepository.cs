@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace CasoPropuesto_5.Repository;
 
-public class ProveedorRepository : Repositorio<Proveedore>, IProveedorRepository
+public class ProveedorRepository : GenericRepository<Proveedore>, IProveedorRepository
 {
     public ProveedorRepository(AppDbContext contexto) : base(contexto)
     {

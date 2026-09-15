@@ -1,8 +1,9 @@
 using CasoPropuesto_5.Models;
+using CasoPropuesto_5.Repository.Implements;
 
 namespace CasoPropuesto_5.Repository;
 
-public interface IMateriasPrimaRepository : IRepositorio<MateriasPrima>
+public interface IMateriasPrimaRepository : IGenericRepository<MateriasPrima>
 {
     Task<IEnumerable<MateriasPrima>> ObtenerConProveedorAsync();
     Task<IEnumerable<MateriasPrima>> ObtenerConAlertaReabastecimientoAsync();

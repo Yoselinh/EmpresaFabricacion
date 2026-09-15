@@ -1,8 +1,9 @@
 using CasoPropuesto_5.Models;
+using CasoPropuesto_5.Repository.Implements;
 
 namespace CasoPropuesto_5.Repository;
 
-public interface IInspeccionesCalidadRepository : IRepositorio<InspeccionesCalidad>
+public interface IInspeccionesCalidadRepository : IGenericRepository<InspeccionesCalidad>
 {
     Task<IEnumerable<InspeccionesCalidad>> ObtenerPorOrdenAsync(int ordenProduccionId);
     Task<IEnumerable<InspeccionesCalidad>> ObtenerPorEtapaAsync(string etapa);

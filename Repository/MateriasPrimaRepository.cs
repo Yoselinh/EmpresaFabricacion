@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace CasoPropuesto_5.Repository;
 
-public class MateriasPrimaRepository : Repositorio<MateriasPrima>, IMateriasPrimaRepository
+public class MateriasPrimaRepository : GenericRepository<MateriasPrima>, IMateriasPrimaRepository
 {
     public MateriasPrimaRepository(AppDbContext contexto) : base(contexto)
     {

@@ -1,6 +1,7 @@
 using System.Text.Json.Serialization;
 using CasoPropuesto_5.Models;
 using CasoPropuesto_5.Repository;
+using CasoPropuesto_5.Repository.Implements;
 using CasoPropuesto_5.Servicies;
 using Microsoft.EntityFrameworkCore;
 
@@ -28,7 +29,7 @@ builder.Services.AddSwaggerGen(options =>
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-builder.Services.AddScoped(typeof(IRepositorio<>), typeof(Repositorio<>));
+builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
 builder.Services.AddScoped<IOrdenesProduccionRepository, OrdenesProduccionRepository>();
 builder.Services.AddScoped<IInspeccionesCalidadRepository, InspeccionesCalidadRepository>();
 builder.Services.AddScoped<IMateriasPrimaRepository, MateriasPrimaRepository>();

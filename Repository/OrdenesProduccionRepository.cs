@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace CasoPropuesto_5.Repository;
 
-public class OrdenesProduccionRepository : Repositorio<OrdenesProduccion>, IOrdenesProduccionRepository
+public class OrdenesProduccionRepository : GenericRepository<OrdenesProduccion>, IOrdenesProduccionRepository
 {
     public OrdenesProduccionRepository(AppDbContext contexto) : base(contexto)
     {
