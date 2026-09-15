@@ -1,5 +1,5 @@
 {
-  "version": 4,
+  "version": 3,
   "targets": {
     "net10.0": {
       "Humanizer.Core/2.14.1": {
@@ -2666,11 +2666,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\LENOVO\\RiderProjects\\CasoPropuesto-5\\CasoPropuesto-5\\CasoPropuesto-5.csproj",
+      "projectUniqueName": "C:\\Users\\LENOVO\\RiderProjects\\EmpresaFabricacion\\CasoPropuesto-5.csproj",
       "projectName": "CasoPropuesto-5",
-      "projectPath": "C:\\Users\\LENOVO\\RiderProjects\\CasoPropuesto-5\\CasoPropuesto-5\\CasoPropuesto-5.csproj",
+      "projectPath": "C:\\Users\\LENOVO\\RiderProjects\\EmpresaFabricacion\\CasoPropuesto-5.csproj",
       "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\LENOVO\\RiderProjects\\CasoPropuesto-5\\CasoPropuesto-5\\obj\\",
+      "outputPath": "C:\\Users\\LENOVO\\RiderProjects\\EmpresaFabricacion\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\LENOVO\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -2698,7 +2698,7 @@
         "auditLevel": "low",
         "auditMode": "all"
       },
-      "SdkAnalysisLevel": "10.0.400"
+      "SdkAnalysisLevel": "10.0.100"
     },
     "frameworks": {
       "net10.0": {
@@ -2743,7 +2743,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.400/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.100/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.AspNetCore": "(,10.0.32767]",
           "Microsoft.AspNetCore.Antiforgery": "(,10.0.32767]",

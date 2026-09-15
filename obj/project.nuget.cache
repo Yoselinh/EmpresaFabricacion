@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4RrUd6J34QM=",
+  "dgSpecHash": "7z0fCxK+7mg=",
   "success": true,
-  "projectFilePath": "C:\\Users\\LENOVO\\RiderProjects\\CasoPropuesto-5\\CasoPropuesto-5\\CasoPropuesto-5.csproj",
+  "projectFilePath": "C:\\Users\\LENOVO\\RiderProjects\\EmpresaFabricacion\\CasoPropuesto-5.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\LENOVO\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\LENOVO\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.11\\microsoft.aspnetcore.openapi.10.0.11.nupkg.sha512",
