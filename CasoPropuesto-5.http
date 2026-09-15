@@ -1,6 +1,114 @@
 @CasoPropuesto_5_HostAddress = http://localhost:5004
 
-GET {{CasoPropuesto_5_HostAddress}}/weatherforecast/
+### Producción
+GET {{CasoPropuesto_5_HostAddress}}/api/ordenes-produccion
 Accept: application/json
 
 ###
+GET {{CasoPropuesto_5_HostAddress}}/api/ordenes-produccion?estado=Planificada
+Accept: application/json
+
+###
+POST {{CasoPropuesto_5_HostAddress}}/api/ordenes-produccion
+Content-Type: application/json
+
+{
+  "codigoOrden": "OP-001",
+  "estado": "Planificada"
+}
+
+###
+PATCH {{CasoPropuesto_5_HostAddress}}/api/ordenes-produccion/1/estado
+Content-Type: application/json
+
+{
+  "estado": "En proceso"
+}
+
+### Calidad
+GET {{CasoPropuesto_5_HostAddress}}/api/inspecciones-calidad
+Accept: application/json
+
+###
+GET {{CasoPropuesto_5_HostAddress}}/api/inspecciones-calidad/defectuosas
+Accept: application/json
+
+###
+POST {{CasoPropuesto_5_HostAddress}}/api/inspecciones-calidad
+Content-Type: application/json
+
+{
+  "ordenProduccionId": 1,
+  "etapa": "Ensamble",
+  "resultado": "Aprobado",
+  "observaciones": "Inspección de etapa inicial"
+}
+
+###
+PATCH {{CasoPropuesto_5_HostAddress}}/api/inspecciones-calidad/1/defectuoso
+Content-Type: application/json
+
+{
+  "observaciones": "Pieza fuera de tolerancia"
+}
+
+### Inventario
+GET {{CasoPropuesto_5_HostAddress}}/api/materias-primas
+Accept: application/json
+
+###
+GET {{CasoPropuesto_5_HostAddress}}/api/materias-primas/alertas
+Accept: application/json
+
+###
+POST {{CasoPropuesto_5_HostAddress}}/api/materias-primas
+Content-Type: application/json
+
+{
+  "nombre": "Acero inoxidable",
+  "stockActual": 8,
+  "stockMinimo": 10,
+  "proveedorId": 1
+}
+
+###
+PATCH {{CasoPropuesto_5_HostAddress}}/api/materias-primas/1/reabastecer
+Content-Type: application/json
+
+{
+  "cantidad": 25
+}
+
+### Proveedores
+GET {{CasoPropuesto_5_HostAddress}}/api/proveedores
+Accept: application/json
+
+###
+POST {{CasoPropuesto_5_HostAddress}}/api/proveedores
+Content-Type: application/json
+
+{
+  "nombre": "Aceros del Sur",
+  "contacto": "ventas@aceros.com",
+  "evaluacionDesempenio": 4.50
+}
+
+###
+PATCH {{CasoPropuesto_5_HostAddress}}/api/proveedores/1/evaluacion
+Content-Type: application/json
+
+{
+  "evaluacionDesempenio": 4.80
+}
+
+### Informes
+GET {{CasoPropuesto_5_HostAddress}}/api/informes
+Accept: application/json
+
+###
+GET {{CasoPropuesto_5_HostAddress}}/api/informes/produccion
+Accept: application/json
+
+###
+GET {{CasoPropuesto_5_HostAddress}}/api/informes/calidad
+Accept: application/json
